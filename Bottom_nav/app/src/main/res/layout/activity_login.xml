@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg1"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Label: "Login" Title -->
+
+        <!-- Label for Email -->
+
+        <!-- Email Input Field -->
+
+        <TextView
+            android:id="@+id/loginlbl"
+            android:layout_width="195dp"
+            android:layout_height="47dp"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="@string/loginlbl"
+            android:textColor="@color/yellow"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.66"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.187" />
+
+        <TextView
+            android:id="@+id/emaillbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="@string/uname"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/labels"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="3dp"
+            app:hintTextAppearance="@font/refrigerator_deluxe_heavy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.383">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/labels"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Label for Password -->
+
+        <!-- Password Input Field -->
+
+        <TextView
+            android:id="@+id/passwordlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="@string/pword"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.522" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/labels"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidthFocused="3dp"
+            app:hintTextAppearance="@font/refrigerator_deluxe_heavy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.603">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:textColor="@color/labels"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Login Button -->
+        <android.widget.Button
+            android:id="@+id/btnLogin"
+            android:layout_width="160dp"
+            android:layout_height="126dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="@string/loginbtn"
+            android:textColor="@color/labels"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.818" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

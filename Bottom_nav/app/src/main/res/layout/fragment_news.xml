@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NewsFragment"
+    android:background="@drawable/homepage_bg">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- LinearLayout to hold all content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/rvlgd"
+                android:layout_width="381dp"
+                android:layout_height="196dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/rvlgd" />
+
+            <TextView
+                android:id="@+id/Newslbl"
+                android:layout_marginTop="8dp"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:scaleType="fitXY"
+                android:text="@string/News"
+                android:textColor="@color/yellow"
+                android:textSize="35sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="0sp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                >
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageslider"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" />
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- 1 Item -->
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01.  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PATCH NOTES"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/yellow"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Marvel Rivals consistently delivers patch notes in a clear and timely manner,  providing players with detailed updates on balance changes, bug fixes, and new content to keep the gameplay experience fresh and engaging."
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 2 Item -->
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="02.  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW SEASON"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/yellow"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The new season of Marvel Rivals has officially kicked off, bringing with it an exciting wave of fresh content, Alongside these updates, a full rank reset has been implemented, allowing all players—whether veterans or newcomers"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 3 Item -->
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="03.  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW HEROES"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/yellow"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Joining the roster in Marvel Rivals are the iconic members of the Fantastic Four: Mister Fantastic, Invisible Woman, Human Torch, and The Thing. Each hero brings their own unique abilities to the battlefield"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+
+                    <!-- 4 Item -->
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="04.  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW COSMETICS"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="@color/yellow"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alongside the gameplay updates, the new season of Marvel Rivals introduces a stunning collection of cosmetics, including brand-new skins that let players showcase their favorite heroes in bold new styles. "
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/newhr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:scaleType="fitXY"
+                android:text="NEW HERO"
+                android:textColor="@color/yellow"
+                android:textSize="35sp" />
+
+            <VideoView
+                android:id="@+id/ultronvid"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/latestlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:scaleType="fitXY"
+                android:text="@string/latest"
+                android:textColor="@color/yellow"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-160dp"
+                android:src="@drawable/latest1"
+                />
+
+            <TextView
+                android:id="@+id/twitchdropdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:layout_marginTop="-140dp"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:text="OTHER REWARDS INCLUDE" />
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <!-- This is the ONE allowed child of HorizontalScrollView -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- ITEM 1 -->
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/reward1"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW MANTIS SKIN"
+                                android:textStyle="bold"
+                                android:textColor="@color/yellow"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  |  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="#CCCCCC"
+                                android:textSize="11sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVAILABLE NOW"
+                                android:textColor="#CCCCCC"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FLORAL MAIDEN MANTIS"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Complete all of the cerebro's mission to earn Mantis floral maiden skin and show off the power of nature "
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- ITEM 2 -->
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/reward4"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW WANDA SKIN"
+                                android:textStyle="bold"
+                                android:textColor="@color/yellow"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  |  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="#CCCCCC"
+                                android:textSize="11sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVAILABLE NOW"
+                                android:textColor="#CCCCCC"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHAOS GOWN SCARLET WITCH"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Complete nine ingame missions to earn Wanda's dazzling new gown for the hellfire gala along with all its other rewards"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- ITEM 3-->
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/reward3"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW BATTLEPASS"
+                                android:textStyle="bold"
+                                android:textColor="@color/yellow"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  |  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="#CCCCCC"
+                                android:textSize="11sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVAILABLE NOW"
+                                android:textColor="#CCCCCC"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NEW SKINS REWARDS"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Complete missions through out the game and earn all the amazing rewards this year's hellfire gala has to offer"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <!-- ITEM 4-->
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/reward2"
+                            android:layout_marginBottom="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW HAWKEYE SKIN"
+                                android:textStyle="bold"
+                                android:textColor="@color/yellow"
+                                android:textSize="11sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  |  "
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                android:textColor="#CCCCCC"
+                                android:textSize="11sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AVAILABLE SOON"
+                                android:textColor="#CCCCCC"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/refrigerator_deluxe_heavy"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BINARY ARROW"
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="with the second half of season 2 on the horizon, Hawkeye is getting a brand new skin for free earnable through missions."
+                            android:fontFamily="@font/refrigerator_deluxe_heavy"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+            <TextView
+                android:id="@+id/newmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:textSize="35sp"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="78dp"
+                android:text="@string/newmaps" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="0sp"
+                android:scaleType="fitXY">
+
+                <!-- Second CardView with ImageSlider -->
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageslider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/learn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/learn" />
+
+            <android.widget.Button
+                android:id="@+id/btnheroes"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:text="@string/seefull"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/labels"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="0dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

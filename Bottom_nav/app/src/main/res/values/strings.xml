@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Rivals Guide</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Heroes">HEROES</string>
+    <string name="Home">HOME</string>
+    <string name="Events">EVENTS</string>
+    <string name="News">NEWS</string>
+    <string name="Vanguard">VANGUARD</string>
+    <string name="Duelist">DUELIST</string>
+    <string name="Strategist">STRATEGIST</string>
+    <string name="guide">HERO GUIDE</string>
+    <string name="seefull">VIEW GUIDES</string>
+    <string name="patch1">Marvel Rivals Version 20250314 Balance</string>
+    <string name="latest">LATEST REWARDS</string>
+    <string name="latest2">New Twitch drops featuring will of Galacta Adam Warlock and many more</string>
+    <string name="newmaps">FEATURING NEW MAPS </string>
+    <string name="learn">WANNA LEARN A NEW HERO?</string>
+    <string name="Uname">USERNAME:</string>
+    <string name="UID">UID: 03220009821</string>
+    <string name="Unamebtn">SET USERNAME</string>
+    <string name="open_nav">Open</string>
+    <string name="close_nav">Close</string>
+    <string name="abtUs">About Rivals Guide</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_tweet_text">Hi, howdy?</string>
+    <string name="button_login">Login</string>
+    <string name="button_signup">Signup</string>
+    <string name="button_apply">Apply</string>
+    <string name="button_signout">Signout</string>
+    <string name="signup_text">No account? Go to Signup</string>
+    <string name="text_login">Already have an account? Log in</string>
+    <string name="hint_search">Search</string>
+    <string name="loginlbl">WELCOME</string>
+    <string name="uname">USERNAME:</string>
+    <string name="unamehint">Enter Username:</string>
+    <string name="pword">PASSWORD:</string>
+    <string name="pwordhnt">Enter Password:</string>
+    <string name="loginbtn">LOG-IN</string>
+    <string name="signupnow">Dont have an account yet? </string>
+    <string name="signupnowclck"> Sign up now! </string>
+    <string name="signupnowclck2"> SIGN UP NOW! </string>
+    <string name="Register"> REGISTER </string>
+    <string name="username"> USERNAME: </string>
+    <string name="usernamehnt"> ENTER USERNAME: </string>
+    <string name="UIDreg"> USER ID: </string>
+    <string name="UIDhnt"> ENTER UID: </string>
+
+
+    <string name="paragraph1">Rivals Guide is a comprehensive companion app designed to enhance the experience of Marvel Rivals players.&#10;It provides a centralized platform where users can stay informed,&#10;learn about the game&#8217;s mechanics, and improve their gameplay.&#10;Whether you&#8217;re a beginner looking for guidance or an experienced player aiming to refine your skills,&#10;the app offers valuable resources to support your journey.</string>
+
+    <string name="paragraph2">With an intuitive interface, Rivals Guide makes it easy to access important information about the game.&#10;From keeping up with the latest updates to exploring in-depth details about the characters,&#10;the app serves as a reliable source for everything related to Marvel Rivals. By offering structured and accessible content,&#10;it helps players understand the game better and develop strategies to enhance their performance.</string>
+
+    <string name="paragraph3">More than just an informational tool, Rivals Guide also provides a space for users to engage with expert insights and tutorials.&#10;By integrating various learning resources, it ensures that players can continuously improve their knowledge and skills.&#10;Whether you want to stay updated on changes, deepen your understanding of the game,&#10;or refine your strategies, Rivals Guide is the perfect companion to support your Marvel Rivals experience.</string>
+</resources>

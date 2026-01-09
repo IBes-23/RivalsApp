@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- LinearLayout to hold all content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg4">
+
+
+            <TextView
+                android:id="@+id/heroeslbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/refrigerator_deluxe_heavy"
+                android:text="@string/Heroes"
+                android:textColor="@color/yellow"
+                android:textSize="50sp" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Vanlbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/refrigerator_deluxe_heavy"
+                        android:text="@string/Vanguard"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/vanicon2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/vanicon" />
+                </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center_vertical">
+
+                        <!-- Card 1 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp">
+
+
+
+                            <ImageView
+                                android:id="@+id/venom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/venom"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Card 2 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/drstrange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/drstrange"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 3 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/groot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/groot"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 4 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/emmafrost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/emmafrost"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 5 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/peni"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/peniparker"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/thor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/thor"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/duelistlbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/refrigerator_deluxe_heavy"
+                        android:text="@string/Duelist"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/duelicon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/duelicon" />
+                </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center_vertical">
+
+                        <!-- Card 1 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="8dp">
+
+
+
+                            <ImageView
+                                android:id="@+id/wanda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/wanda"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Card 2 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/storm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/storm"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 3 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/spidey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/spider"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 4 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/ironf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ironfist"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 5 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/hela"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/hela"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button11"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/widow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/blackwidow"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button12"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/stratlbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/refrigerator_deluxe_heavy"
+                        android:text="@string/Strategist"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/straticon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/straticon" />
+                </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center_vertical">
+
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/luna"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/luna"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button13"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/cnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cnd"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button14"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/loki"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/loki"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/inviswoman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/inviswoman"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button16"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/ultron"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ultronpic"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button17"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Card 6 -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/jeff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/jeff"
+                                android:maxWidth="200dp"
+                                android:maxHeight="200dp"
+                                android:scaleType="centerInside"
+                                android:adjustViewBounds="true" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center_vertical">
+
+                                <android.widget.Button
+                                    android:id="@+id/button18"
+                                    android:layout_width="0dp"
+                                    android:layout_height="90dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/guide"
+                                    android:layout_marginStart="8dp"
+                                    android:fontFamily="@font/refrigerator_deluxe_heavy"
+                                    android:layout_marginEnd="8dp"
+                                    android:background="@drawable/btn_bg"
+                                    android:textColor="@color/labels"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

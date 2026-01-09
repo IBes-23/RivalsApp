@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/post_bg1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Username (readonly) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:text="UserSession.username"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- UID (readonly) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uidLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="UID"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:enabled="false"
+                android:text="UserSession.uid"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Caption -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Description"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideInset"
+                android:scrollHorizontally="false"
+                android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Select file -->
+        <android.widget.Button
+            android:id="@+id/select_file_button"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="Select Thumbnail" />
+
+        <!-- File name display -->
+        <TextView
+            android:id="@+id/selected_file_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:layout_marginTop="8dp" />
+
+        <!-- Upload button -->
+        <android.widget.Button
+            android:id="@+id/upload_file_button"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/refrigerator_deluxe_heavy"
+            android:text="Post" />
+    </LinearLayout>
+</FrameLayout>
