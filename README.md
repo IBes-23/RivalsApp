@@ -4,7 +4,6 @@ Rivals Guide is an Android application designed to serve as a companion app for 
 # 🛠️ Technologies Used
 Mobile Application
 - Kotlin
-- Java
 - XML (for UI design)
 
 Backend & Database
